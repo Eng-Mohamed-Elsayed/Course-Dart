@@ -23,8 +23,9 @@ void main() {
   print('count = $count');
 
   // * mod & assign
-  print('$a  = ${-a}');
+  print('$a  = ${-a}'); // 10
   //a = -a % b; // 10
-  a %= b; // 10
+  // a = -a; // 10
+  a %= b; // a = a % b = 590
   print('a = $a');
 }
