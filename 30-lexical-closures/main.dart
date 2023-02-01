@@ -17,7 +17,7 @@ void main() {
   // Function result = f1();
   // print(result());
 
-  // print('value x = ${f1()()}');
+  print('value x = ${f1()()}');
 
   Function f3(int x) {
     print('f1 before f2 : x = $x');
@@ -36,7 +36,7 @@ void main() {
   // Function result = f3(30);
   // print(result());
 
-  // print('value x = ${f3(30)()}');
+  print('value x = ${f3(30)()}');
 
   Function f4(int x) {
     print('f1 before f2 : x = $x');
@@ -55,7 +55,7 @@ void main() {
   // Function result = f4(20);
   // print(result(30));
 
-  // print(f4(20)(30));
+  print(f4(20)(30));
 
   Function f5(int x) {
     print('f1 before f2 : x = $x');
