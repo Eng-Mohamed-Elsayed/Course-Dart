@@ -6,10 +6,15 @@ void main() {
   String? name = stdin.readLineSync();
 
   print('Enter age ');
-  int age = int.parse(stdin.readLineSync() ?? '');
-  print('Enter salary ');
-  double salary = double.parse(stdin.readLineSync() ?? '');
+  String inputAge = stdin.readLineSync() ?? '';
+  int? age;
+  // if (int.tryParse(inputAge) != null) {
+  //   age = int.parse(inputAge);
+  // }
+  age = int.tryParse(inputAge);
 
-  print('name : $name, age : $age, salary : $salary');
-  // TODO : apply condation used if
+  print('Enter salary ');
+  double? salary = double.tryParse(stdin.readLineSync() ?? '');
+
+  print('name : $name, age : ${age ?? 0}, salary : ${salary ?? 0.0}');
 }
